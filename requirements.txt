@@ -1,6 +1,4 @@
 python-telegram-bot
-telegram
-random
 json
 asyncio
 nest_asyncio
