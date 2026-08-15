@@ -1,5 +1,4 @@
 python-telegram-bot
-json
 asyncio
 nest_asyncio
 datetime
