@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 """
 TeleBet - Telegram betting game bot
-Stage 1: translate remaining user-facing messages to English, update help text, register gold handler directly.
+Stage 2: ensure stars RNG is local and stable per-minute, handle /stars price explicitly, and fix bank help message artifact.
 """
 
 from __future__ import annotations
@@ -648,5 +648,7 @@ async def bank(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
 
     if cmd == "ln":
         if len(context.args) < 2:
-            await update.message.reply_text("Specify loan amount: /bank ln https://api.github.com/repos/iTs-GoJo/TeleBet/blob/main/main.py<amount>")
+            await update.message.reply_text("Specify loan amount: /bank ln <amount>")
             return
+
+{
